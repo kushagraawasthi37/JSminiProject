@@ -1,0 +1,109 @@
+/* style.css */
+
+/* Dark background and center container */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Full height */
+    display: flex;
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+    background-color: #121212;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+}
+
+/* Main container */
+.container {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #bb86fc;
+    margin-bottom: 20px;
+}
+
+/* Input section */
+.input-Container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    font-size: 1rem;
+    outline: none;
+}
+
+#todo-input::placeholder {
+    color: #888;
+}
+
+#add-task-button {
+    padding: 12px 18px;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#add-task-button:hover {
+    background-color: #9f6efc;
+}
+
+/* To-Do List */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    background-color: #2c2c2c;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+#todo-list li:hover {
+    background-color: #383838;
+}
+
+/* Delete Button inside tasks */
+#todo-list li button {
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.7;
+}

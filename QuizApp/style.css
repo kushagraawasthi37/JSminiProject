@@ -1,0 +1,123 @@
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6d28d9, #9333ea, #c084fc);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Quiz Container */
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #facc15;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Question Text */
+#question-text {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Choices List */
+#choices-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#choices-list li {
+  background: #1f2937;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+#choices-list li:hover {
+  background: #4b5563;
+  transform: scale(1.03);
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+#start-btn,
+#restart-btn {
+  background: #facc15;
+  color: #222;
+}
+
+#start-btn:hover,
+#restart-btn:hover {
+  background: #fbbf24;
+}
+
+#next-btn {
+  background: #22c55e;
+  color: white;
+}
+
+#next-btn:hover {
+  background: #16a34a;
+}
+
+/* Result Box */
+#result-container h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+#score {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #facc15;
+  font-weight: bold;
+}
+
+/* Hide/Show Utility */
+.hidden {
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

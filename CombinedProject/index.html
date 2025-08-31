@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Combined Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2 id="logo">📂 Projects</h2>
+      <button id="sidebar-toggle">⏩</button>
+    </div>
+    <button class="nav-link" data-target="todo">✅ Todo List</button>
+    <button class="nav-link" data-target="expense">💰 Expense Tracker</button>
+    <button class="nav-link" data-target="quiz">❓ Quiz App</button>
+    <button class="nav-link" data-target="ecommerce">🛒 Ecommerce Cart</button>
+    <button class="nav-link" data-target="weather">🌤 Weather App</button>
+    <button id="theme-toggle">🌙 Dark/Light</button>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main id="content">
+    <div id="todo" class="section"></div>
+    <div id="expense" class="section"></div>
+    <div id="quiz" class="section"></div>
+    <div id="ecommerce" class="section"></div>
+    <div id="weather" class="section"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
